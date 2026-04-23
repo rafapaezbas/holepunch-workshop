@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/rafapaezbas/holepunch-workshop#readme",
   "dependencies": {
+    "corestore": "^7.9.2",
     "framed-stream": "^1.0.1",
     "hyperbee": "^2.27.3",
     "hypercore": "^11.28.1",
     "hyperdht": "^6.30.0",
+    "hyperdrive": "^13.3.2",
     "hyperswarm": "^4.17.0"
   }
 }
