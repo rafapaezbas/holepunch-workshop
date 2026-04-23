@@ -18,9 +18,11 @@ npm install
 | [`hyperbee`](./hyperbee) | B-tree key-value store built on Hypercore |
 | [`hyperdht`](./hyperdht) | DHT for peer discovery with UDP hole-punching |
 | [`hyperswarm`](./hyperswarm) | High-level P2P networking over a shared topic |
+| [`hyperdrive`](./hyperdrive) | Secure distributed file system built on Hypercore |
 
 Each folder contains runnable examples. Navigate into a module directory and run the scripts with Node.js.
 
 ## Resources
 
+- [Holepunch Docs](https://docs.pears.com)
 - [Holepunch GitHub](https://github.com/holepunchto)
