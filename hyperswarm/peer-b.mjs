@@ -1,11 +1,11 @@
 import Hyperswarm from 'hyperswarm'
 import Hypercore from 'hypercore'
 
+console.log('====Peer B====')
+
 const swarm = new Hyperswarm()
 const hypercore = new Hypercore('./storage-b', Buffer.from(process.argv[2], 'hex'))
 await hypercore.ready()
-
-console.log('====Peer B====')
 
 console.log('Hypercore public key:', hypercore.key.toString('hex'))
 

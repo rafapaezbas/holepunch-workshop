@@ -1,5 +1,6 @@
 import Hyperswarm from 'hyperswarm'
 import Hypercore from 'hypercore'
+import Hyperbee from 'hyperbee'
 
 console.log('====Peer C====')
 
@@ -9,16 +10,16 @@ await hypercore.ready()
 
 console.log('Hypercore public key:', hypercore.key.toString('hex'))
 
+const db = new Hyperbee(hypercore, { keyEncoding: 'utf-8', valueEncoding: 'utf-8'})
+await db.ready()
+
 swarm.on('connection', (connection) => {
   console.log('connection')
   hypercore.replicate(connection)
 })
 
 swarm.join(hypercore.discoveryKey)
+await swarm.flush()
 
-const readStream = hypercore.createReadStream({ start: 0, live: true })
-for await (const data of readStream) {
-  const n = data.readUInt32BE(0)
-  console.log('data:', n)
-}
-
+await db.update()
+console.log('get:', await db.get('hello'))

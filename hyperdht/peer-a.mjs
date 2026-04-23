@@ -1,6 +1,8 @@
 import DHT from 'hyperdht'
 import FramedStream from 'framed-stream'
 
+console.log('====Peer A====')
+
 const node = new DHT()
 const server = node.createServer()
 

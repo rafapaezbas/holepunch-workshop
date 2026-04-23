@@ -1,4 +1,5 @@
 import Hyperswarm from 'hyperswarm'
+import Hyperbee from 'hyperbee'
 import Hypercore from 'hypercore'
 
 console.log('====Peer A====')
@@ -17,10 +18,7 @@ await swarm.flush()
 
 console.log('Hypercore public key:', hypercore.key.toString('hex'))
 
-let n = 0
-setInterval(async () => {
-  const buffer = Buffer.alloc(4)
-  buffer.writeUInt32BE(n++, 0)
-  await hypercore.append(buffer)
-}, 1000)
+const db = new Hyperbee(hypercore, { keyEncoding: 'utf-8', valueEncoding: 'utf-8'})
+await db.ready()
 
+await db.put('hello', 'world')
