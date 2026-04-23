@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rafapaezbas/holepunch-workshop#readme",
   "dependencies": {
+    "autopass": "^3.4.1",
     "corestore": "^7.9.2",
     "framed-stream": "^1.0.1",
     "hyperbee": "^2.27.3",
