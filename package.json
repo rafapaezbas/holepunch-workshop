@@ -19,6 +19,8 @@
   "homepage": "https://github.com/rafapaezbas/holepunch-workshop#readme",
   "dependencies": {
     "framed-stream": "^1.0.1",
-    "hyperdht": "^6.30.0"
+    "hypercore": "^11.28.1",
+    "hyperdht": "^6.30.0",
+    "hyperswarm": "^4.17.0"
   }
 }
