@@ -25,5 +25,4 @@ Each folder contains runnable examples. Navigate into a module directory and run
 
 ## Resources
 
-- [Holepunch Docs](https://docs.pears.com)
 - [Holepunch GitHub](https://github.com/holepunchto)
