@@ -19,6 +19,7 @@ npm install
 | [`hyperdht`](./hyperdht) | DHT for peer discovery with UDP hole-punching |
 | [`hyperswarm`](./hyperswarm) | High-level P2P networking over a shared topic |
 | [`hyperdrive`](./hyperdrive) | Secure distributed file system built on Hypercore |
+| [`autopass`](./autopass) | Multiwriter distributed password and notes manager |
 
 Each folder contains runnable examples. Navigate into a module directory and run the scripts with Node.js.
 
